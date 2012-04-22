@@ -1,0 +1,17 @@
+package stango
+
+class Group {
+	static hasMany = [user:User]
+	String zip
+	String groupName
+	String homePageheadline
+	String description
+	Date startDate
+	Date endDate
+	User admin
+    static mapping = {
+        table 'group_st'
+    }
+    static constraints = {
+    }
+}
